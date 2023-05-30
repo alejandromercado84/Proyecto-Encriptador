@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <img src="images/banner.png">
+    <title>Encriptador de textos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="titulo">Encriptador - Desencriptador de texto</h1>
+    <main class="container">
+      <div class="parte-encriptar">
+        <label for="texto">Ingrese el texto que desea encriptar o desencriptar:</label>
+        <br>
+        <textarea id="texto" rows="4" placeholder="Escriba su texto aquí" cols="40" pattern="[a-z]+" required></textarea>
+        <br/>
+        <p class="advertencia">Solo letras minusculas y sin acentos</p>
+        <br>
+        <button class="boton-encriptar" onclick="encriptar()">Encriptar</button>
+        <button class="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+      </div>
+      <div class="parte-desencriptar">
+        <label for="resultado">Texto encriptado-desencriptado:</label>
+        <br>
+        <textarea id="resultado" rows="4" placeholder="Aquí aparecerá el resultado" cols="40"></textarea>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Proyecto realizado para el Programa ORACLE + Alura Latam. </p>
+    </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
